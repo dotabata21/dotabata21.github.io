@@ -3,97 +3,96 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="dotabata21のAndroidアプリ開発者サイト。血圧・脈拍を記録し、履歴やグラフで振り返る「血圧記録くん」をご紹介します。">
+  <meta name="description" content="血圧・脈拍を記録し、履歴・統計・グラフで振り返る血圧記録くん。Android版・Web版の案内、使い方、CSVバックアップ、端末内OCR、FAQをご紹介します。">
   <meta name="theme-color" content="#edf5fc">
-  <title>dotabata21 Apps — 血圧記録くん</title>
+  <meta name="robots" content="index,follow">
+  <title>血圧記録くん | Android・Webの公式紹介・使い方</title>
+  <link rel="canonical" href="https://dotabata21.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="血圧記録くん | dotabata21 Apps">
+  <meta property="og:title" content="血圧記録くん | Android・Webの公式紹介・使い方">
+  <meta property="og:description" content="血圧・脈拍を記録し、履歴・統計・グラフで振り返る血圧記録くん。Android版・Web版の案内、使い方、CSVバックアップ、端末内OCR、FAQをご紹介します。">
+  <meta property="og:url" content="https://dotabata21.github.io/">
+  <meta property="og:image" content="https://dotabata21.github.io/images/blood-pressure-kun-hero.png">
+  <meta property="og:image:width" content="2048">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="血圧記録くんのキャラクターとアプリ名">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="images/blood-pressure-kun-icon.png">
+  <link rel="apple-touch-icon" href="images/blood-pressure-kun-icon.png">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="dotabata21 Apps トップページ">dotabata21 <span>Apps</span></a>
-      <nav aria-label="メインナビゲーション">
-        <a href="#about">アプリについて</a>
-        <a href="privacy.html">プライバシーポリシー</a>
-        <a href="#contact">お問い合わせ</a>
-      </nav>
+      <nav aria-label="メインナビゲーション"><a href="index.html" aria-current="page">アプリについて</a><a href="guide.html">使い方</a><a href="faq.html">FAQ</a><a href="privacy.html">プライバシー</a><a href="index.html#contact">お問い合わせ</a></nav>
     </div>
   </header>
-
   <main id="main" class="container">
     <section class="hero" aria-labelledby="app-title">
-      <p class="eyebrow">ANDROID APP</p>
+      <p class="eyebrow">日々の記録を、あなたのペースで。</p>
       <h1 id="app-title">血圧記録くん</h1>
       <p class="app-name-en" lang="en">Blood Pressure Kun</p>
-      <img class="hero-image" src="images/blood-pressure-kun-hero.png" width="2048" height="768" alt="血圧記録くん メインビジュアル" fetchpriority="high" decoding="async">
-      <p class="hero-description">血圧・脈拍をかんたんに記録し、<br class="desktop-break">履歴やグラフで振り返るためのAndroidアプリです。</p>
+      <img class="hero-image" src="images/blood-pressure-kun-hero.png" width="2048" height="768" alt="血圧記録くんのキャラクターとアプリ名" fetchpriority="high" decoding="async">
+      <p class="hero-description">血圧・脈拍を記録して、履歴・統計・グラフで振り返る。<br class="desktop-break">Android版とWeb版の公式紹介・利用案内サイトです。</p>
+      <div class="hero-links"><a href="#versions">Android版・Web版のご案内</a><a href="guide.html">はじめての使い方 →</a></div>
     </section>
-
     <section id="about" class="about-section" aria-labelledby="about-title">
-      <div class="app-image-wrap">
-        <img class="app-image" src="images/blood-pressure-kun-icon.png" width="1254" height="1254" alt="血圧記録くん" loading="lazy" decoding="async">
-      </div>
-      <div>
-        <p class="eyebrow">ABOUT THE APP</p>
-        <h2 id="about-title">毎日の記録を、<br>振り返りやすく。</h2>
-        <p>最高血圧・最低血圧・脈拍と、測定日時やメモをまとめて記録。履歴、統計、グラフで、これまでの記録を見やすく確認できます。</p>
-        <p>キャラクターのいるやわらかな表示と、すっきりしたシンプルな表示を選べます。日本語・英語・簡体字・繁体字・韓国語・フランス語に対応しています。</p>
+      <div class="app-image-wrap"><img class="app-image" src="images/blood-pressure-kun-icon.png" width="1254" height="1254" alt="大きな赤いハート、マスコットと男の子のアプリアイコン" loading="lazy" decoding="async"></div>
+      <div><p class="eyebrow">ABOUT THE APP</p><h2 id="about-title">毎日の記録を、<br>振り返りやすく。</h2><p>測定した最高血圧・最低血圧、任意の脈拍を、日時やメモと一緒に残せます。「いつ、どんな値だったか」を履歴で確かめ、期間ごとの統計やグラフで見直せます。</p><p>キャラクターのいるCharacter表示と、すっきりしたSimple表示を選べます。日本語・英語・簡体字・繁体字・韓国語・フランス語に対応しています。</p><p class="medical-note">記録と振り返りのためのアプリです。スマートフォン自体で血圧を測定したり、病気の診断・治療・予防に関する医学的判断を行ったりするものではありません。</p></div>
+    </section>
+    <section id="versions" class="versions-section" aria-labelledby="versions-title">
+      <div class="section-heading"><p class="eyebrow">ANDROID &amp; WEB</p><h2 id="versions-title">あなたの環境に合わせて</h2><p>Androidアプリと、ブラウザで使うWeb版。どちらも、日々の記録を振り返るための血圧記録くんです。</p></div>
+      <div class="version-grid">
+        <article class="version-card"><div class="version-heading"><h3>Android版</h3><span class="release-status" data-release-status="android">公開準備中</span></div><p>Androidスマートフォンのアプリとして利用。記録はアプリ専用の端末内領域へ保存します。</p><button class="button-link" disabled data-release="android" aria-describedby="android-release-note">Google Playから入手</button><p id="android-release-note" class="small-note" data-release-pending="android">Google Playでの公開後にご案内します。</p></article>
+        <article class="version-card"><div class="version-heading"><h3>血圧記録くん Web</h3><span class="release-status" data-release-status="web">公開準備中</span></div><p>ブラウザで利用できるWeb版。対応環境ではホーム画面に追加して、Webアプリとして使えます。</p><button class="button-link" disabled data-release="web" aria-describedby="web-release-note">近日公開</button><p id="web-release-note" class="small-note" data-release-pending="web">正式公開後に、このページから開けるようになります。</p></article>
       </div>
     </section>
-
-    <section class="features-section" aria-labelledby="features-title">
-      <div class="section-heading">
-        <p class="eyebrow">FEATURES</p>
-        <h2 id="features-title">記録を続けるための機能</h2>
-      </div>
+    <section id="features" class="features-section" aria-labelledby="features-title">
+      <div class="section-heading"><p class="eyebrow">FEATURES</p><h2 id="features-title">記録を続けるための機能</h2></div>
       <div class="feature-grid">
-        <article class="feature">
-          <span class="feature-number" aria-hidden="true">01</span>
-          <h3>かんたんに記録</h3>
-          <p>血圧・脈拍、測定日時、朝・昼・夜の時間帯を記録。メモも残せます。</p>
-        </article>
-        <article class="feature">
-          <span class="feature-number" aria-hidden="true">02</span>
-          <h3>履歴・統計・グラフ</h3>
-          <p>過去の記録や平均・最大・最小を確認。期間ごとの変化や前年同期との比較もできます。</p>
-        </article>
-        <article class="feature">
-          <span class="feature-number" aria-hidden="true">03</span>
-          <h3>バックアップと取り込み</h3>
-          <p>標準CSVでバックアップ・復元。ほかの形式のCSV / TSVから記録を取り込めます。</p>
-        </article>
-        <article class="feature">
-          <span class="feature-number" aria-hidden="true">04</span>
-          <h3>血圧計から入力を補助</h3>
-          <p>カメラで血圧計の表示を読み取り、確認して入力欄へ反映。保存前に手で修正できます。</p>
-        </article>
+        <article class="feature"><span class="feature-number" aria-hidden="true">01</span><h3>日時・時間帯と一緒に記録</h3><p>最高・最低血圧、任意の脈拍、メモを記録。朝・昼・夜を選べるほか、測定時刻から時間帯を自動で判定できます。</p></article>
+        <article class="feature"><span class="feature-number" aria-hidden="true">02</span><h3>履歴で見直す・修正する</h3><p>保存した記録を一覧で確認。入力を間違えたときは編集でき、不要な記録を個別に削除できます。</p></article>
+        <article class="feature"><span class="feature-number" aria-hidden="true">03</span><h3>統計・グラフで振り返る</h3><p>平均・最大・最小、前回比を確認。月や四半期では前年の同じ時期と比較できます。グラフは時間帯や期間を選んで表示します。</p></article>
+        <article class="feature"><span class="feature-number" aria-hidden="true">04</span><h3>CSVでバックアップ</h3><p>標準CSVで記録を保存・復元。他形式のCSV／TSVも、列や日時の形式を指定して、確認してから取り込めます。</p></article>
+        <article class="feature"><span class="feature-number" aria-hidden="true">05</span><h3>血圧計から入力を補助</h3><p>カメラで液晶の数値を読み取り、確認して入力欄へ反映。画像処理は端末内で行い、撮影だけでは記録を保存しません。</p></article>
+        <article class="feature"><span class="feature-number" aria-hidden="true">06</span><h3>お好みの表示・言語で</h3><p>Character／Simpleと6言語から選べます。Web版は必要なファイルの取得が済めば、主要機能をオフラインでも利用できます。</p></article>
       </div>
     </section>
-
-    <section class="privacy-panel" aria-labelledby="privacy-title">
-      <div>
-        <p class="eyebrow">PRIVACY</p>
-        <h2 id="privacy-title">データの取り扱いについて</h2>
-        <p>記録の保存、カメラ、バックアップ、広告に関する方針をご確認いただけます。</p>
-      </div>
-      <a class="button-link" href="privacy.html">プライバシーポリシー<span aria-hidden="true"> →</span></a>
+    <section id="web" class="web-section" aria-labelledby="web-title">
+      <div class="section-heading"><p class="eyebrow">BLOOD PRESSURE KUN WEB</p><h2 id="web-title">いつものブラウザから。</h2></div>
+      <p>Web版は、Androidのブラウザ、iPhone、PCから利用できることを目指して開発しています。対応環境では、ホーム画面やデスクトップへ追加してWebアプリとして開けます。</p>
+      <div class="info-grid"><article class="info-card"><h3>最初にオンラインで準備</h3><p>初回はインターネットに接続して開き、画面に「オフライン利用OK」と表示されるまで待ちます。ファイル取得後は記録・履歴・分析などをオフラインでも使えます。</p></article><article class="info-card"><h3>ブラウザごとに違いがあります</h3><p>カメラ、ホーム画面への追加、保存先の選択、自動バックアップはブラウザやOSにより異なります。iPhone実機での最終確認はまだ完了していません。</p></article></div>
+      <p><a href="guide.html#install">ホーム画面に追加する方法 →</a>　<a href="faq.html#iphone">iPhoneでの利用について →</a></p>
     </section>
-
-    <section id="contact" class="contact-section" aria-labelledby="contact-title">
-      <p class="eyebrow">CONTACT</p>
-      <h2 id="contact-title">お問い合わせ</h2>
-      <p>血圧記録くんに関するお問い合わせは、こちらへお寄せください。</p>
-      <a class="email-link" href="mailto:dotabata21.apps@gmail.com">dotabata21.apps@gmail.com</a>
-      <p class="developer-note">dotabata21が開発するAndroidアプリをご紹介しています。</p>
+    <section id="data" class="data-section" aria-labelledby="data-title">
+      <p class="eyebrow">YOUR RECORDS</p><h2 id="data-title">大切な記録には、CSVの控えを。</h2>
+      <p>Web版の記録は、利用中のブラウザの端末内保存領域に残ります。血圧記録をクラウド上へ保存し、どの端末からでも同期して開くサービスではありません。</p>
+      <ul class="plain-list"><li>同じ端末でも、別のブラウザ・プロファイル・URLでは保存領域が異なります。</li><li>サイトデータの削除、プライベートモードの終了、ブラウザによる保存領域の消去などで記録が失われる場合があります。</li><li>機種変更前だけでなく、定期的に標準CSVを保存し、ファイルが手元にあることを確かめてください。</li></ul>
+      <p>対応ブラウザでは自動バックアップも利用できます。初期設定はOFFで、利用者が保存先を選び、新しい記録の保存に成功した後に全記録を書き出します。編集・削除・復元では自動更新しないため、その後は手動バックアップもご利用ください。非対応環境では手動CSVを使います。</p>
+      <a class="button-link" href="guide.html#backup">保存とバックアップの使い方</a>
     </section>
+    <section id="camera" class="camera-section" aria-labelledby="camera-title">
+      <div class="section-heading"><p class="eyebrow">CAMERA INPUT</p><h2 id="camera-title">カメラは、転記のお手伝い。</h2></div>
+      <p>液晶全体をガイド枠内に入れて撮影すると、最高血圧・最低血圧・脈拍の候補を読み取ります。画像は端末内で処理し、アプリからOCR用サーバーへ送りません。</p>
+      <p>反射、字体、角度、ピントによって読み取りに失敗したり、もっともらしい誤った値が出たりすることがあります。<strong>血圧計の表示と照合してから「入力欄へ反映」し、最後はいつもの保存操作を行ってください。</strong>対応するWebブラウザでは、既存の画像を選んで読み取ることもできます。</p>
+      <p><a href="guide.html#camera">撮影と確認の手順 →</a></p>
+    </section>
+    <section class="privacy-panel" aria-labelledby="privacy-title"><div><p class="eyebrow">PRIVACY</p><h2 id="privacy-title">情報の取り扱いを、分かりやすく。</h2><p>Android版・Web版・このサイトを分けて、保存先、カメラ、広告、データ削除について説明しています。</p></div><a class="button-link" href="privacy.html">プライバシーポリシー →</a></section>
+    <section id="contact" class="contact-section" aria-labelledby="contact-title"><p class="eyebrow">CONTACT</p><h2 id="contact-title">お問い合わせ</h2><p>使い方の疑問や気になる動作は、まず<a href="faq.html">FAQ</a>をご確認ください。解決しない場合は、利用している版・OS・ブラウザと、操作の流れをお知らせください。</p><a class="email-link" href="mailto:dotabata21.apps@gmail.com">dotabata21.apps@gmail.com</a><p class="small-note">血圧値・メモ・個人情報を含むCSVや写真は、原則として添付しないでください。医療上の相談にはお答えできません。医学的な助言については医師などの医療専門家へご相談ください。</p><p class="developer-note">開発・提供：dotabata21 Apps　／　<a href="licenses.html">アプリとOSSライセンスについて</a></p></section>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-inner">
-      <small>© 2026 dotabata21</small>
+      <small>© 2026 dotabata21 Apps</small>
+      <a href="guide.html">使い方</a>
+      <a href="faq.html">FAQ</a>
       <a href="privacy.html">プライバシーポリシー</a>
-      <a href="#top">ページの先頭へ ↑</a>
+      <a href="licenses.html">OSSライセンス</a>
+      <a href="#top">先頭へ ↑</a>
     </div>
   </footer>
 </body>

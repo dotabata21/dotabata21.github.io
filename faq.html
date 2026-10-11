@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="血圧データの保存先、機種変更、iPhone、オフライン利用、CSV、カメラ読み取り、Android版とWeb版の違いを説明します。">
+  <meta name="theme-color" content="#edf5fc">
+  <meta name="robots" content="index,follow">
+  <title>よくある質問 | 血圧記録くん Android・Web</title>
+  <link rel="canonical" href="https://dotabata21.github.io/faq.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="血圧記録くん | dotabata21 Apps">
+  <meta property="og:title" content="よくある質問 | 血圧記録くん Android・Web">
+  <meta property="og:description" content="血圧データの保存先、機種変更、iPhone、オフライン利用、CSV、カメラ読み取り、Android版とWeb版の違いを説明します。">
+  <meta property="og:url" content="https://dotabata21.github.io/faq.html">
+  <meta property="og:image" content="https://dotabata21.github.io/images/blood-pressure-kun-hero.png">
+  <meta property="og:image:width" content="2048">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="血圧記録くんのキャラクターとアプリ名">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="images/blood-pressure-kun-icon.png">
+  <link rel="apple-touch-icon" href="images/blood-pressure-kun-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="dotabata21 Apps トップページ">dotabata21 <span>Apps</span></a>
+      <nav aria-label="メインナビゲーション"><a href="index.html">アプリについて</a><a href="guide.html">使い方</a><a href="faq.html" aria-current="page">FAQ</a><a href="privacy.html">プライバシー</a><a href="index.html#contact">お問い合わせ</a></nav>
+    </div>
+  </header>
+  <main id="main" class="container policy-container">
+    <header class="policy-heading"><p class="eyebrow">QUESTIONS &amp; ANSWERS</p><h1>よくある質問</h1><p>記録の保存先、移行、ブラウザやカメラの違いなど、使い始める前に知っておきたいことをまとめました。</p></header>
+    <div class="faq-list">
+      <details id="storage" class="faq-item"><summary>血圧データはどこに保存されますか？</summary><div class="faq-answer"><p>Android版はアプリ専用の内部領域、Web版は利用している端末のブラウザ内（IndexedDB）へ保存します。Web版は血圧記録をクラウドDBへ送るサービスではなく、別端末へ自動同期しません。同じ端末でもブラウザ・プロファイル・URLが違えば保存領域は別です。</p></div></details>
+      <details id="lost" class="faq-item"><summary>Web版の記録が見つからないときは？</summary><div class="faq-answer"><p>まず、いつもと同じブラウザ・プロファイル・URLで開いているか確認してください。プライベートモードやサイトデータ削除、保存領域の消去で記録が失われる場合もあります。ブラウザ内の記録が消えた場合、提供者のサーバーから復旧する機能はありません。保存済みの標準CSVがあれば、件数・期間を確認して復元できます。</p></div></details>
+      <details id="move" class="faq-item"><summary>機種変更や別のブラウザへ移るには？</summary><div class="faq-answer"><p>移行前に標準CSVを保存し、移行先でそのファイルを選んで復元します。移行後に件数と内容を確認するまで、元端末の記録とCSVを残してください。Androidの端末間移行が使える場合もありますが、OS・機種・方法によって異なり、CSVの控えもおすすめします。</p></div></details>
+      <details id="iphone" class="faq-item"><summary>iPhoneでも使えますか？</summary><div class="faq-answer"><p>Web版はiPhoneのブラウザでも利用できることを目指しています。WebKitによる模擬確認は行っていますが、iPhone実機での最終確認はまだ完了していません。カメラ、ホーム画面への追加、ファイル保存や自動バックアップは環境によって異なります。「完全対応」「全機能の実機確認済み」とはご案内していません。</p></div></details>
+      <details id="internet" class="faq-item"><summary>インターネットがない場所でも使えますか？</summary><div class="faq-answer"><p>Web版は初回にオンラインで開き、「オフライン利用OK」を確認した後なら主要機能をオフラインで使えます。初回取得・更新・キャッシュ消去後の準備には接続が必要です。Android版の記録・振り返り・端末内OCRも接続なしで動く構成です。広告、外部ページ、クラウド保存先への操作は別に通信します。</p></div></details>
+      <details id="csv" class="faq-item"><summary>CSVバックアップとは何ですか？</summary><div class="faq-answer"><p>記録の控えを、アプリ内のDBとは別のファイルとして保存する機能です。標準CSVには記録IDや日時等の復元用情報も含まれます。暗号化はされていないため、保存先と共有相手に注意してください。復元用の原本は編集せず、Excel等で見る場合はコピーを使うと保管しやすくなります。</p></div></details>
+      <details id="automatic" class="faq-item"><summary>自動バックアップが使えない／更新されないのは？</summary><div class="faq-answer"><p>Web版の自動バックアップには、保存先ファイルへ書き込めるブラウザAPI等が必要です。非対応の環境では手動CSVを利用してください。初期状態はOFFで、ONにした次の新しい記録の保存後から全件を上書きします。編集・削除・復元・他形式取り込みでは自動更新しません。保存先の許可が切れた場合などは設定を確認し、手動バックアップも使ってください。</p></div></details>
+      <details id="save" class="faq-item"><summary>カメラで読み取った値は自動保存されますか？</summary><div class="faq-answer"><p>自動保存しません。読み取り候補を確認し、「入力欄へ反映」で入力を補助します。反映後も手で修正でき、最後に通常の保存操作を行います。OCRがもっともらしく誤読する場合もあるため、血圧計の表示と必ず照合してください。</p></div></details>
+      <details id="photo" class="faq-item"><summary>血圧計の写真は外部へ送られますか？</summary><div class="faq-answer"><p>現在のAndroid版・Web版では、OCR画像を端末内で処理し、OCR用サーバーへ送る経路はありません。撮影した画像をアプリから画像ファイルとして保存する経路もありません。Web版で選んだ既存画像の元ファイルは元の保存先に残ります。これは、サイトやアプリの配信に必要な通信や、Android版の広告SDK通信までなくなるという意味ではありません。</p></div></details>
+      <details id="difference" class="faq-item"><summary>Android版とWeb版はどう違いますか？</summary><div class="faq-answer"><p>記録・履歴・統計・グラフ・標準CSV・他形式取り込み・カメラ入力補助は共通の考え方です。Android版は端末のアプリとして動き、CameraXで撮影します。Web版はブラウザ内に保存し、ブラウザのカメラやファイル操作を使います。Web版の自動バックアップやPWA追加には対応環境が必要です。カメラのピント動作や画面操作も完全には同じではありません。</p></div></details>
+      <details id="ads" class="faq-item"><summary>広告やアクセス解析は入っていますか？</summary><div class="faq-answer"><p>この公式紹介サイトと現在のWeb版には、外部広告・アクセス解析のタグ／SDKを導入していません。Android版はAdMobとUMPを導入済みで、試験ではGoogle公式テスト広告、本公開では本番広告を予定しています。配信のためのホスティング事業者の接続情報処理は、独自のアクセス解析とは別です。詳細はプライバシーポリシーをご確認ください。</p></div></details>
+      <details id="medical" class="faq-item"><summary>アプリの数値やグラフで健康状態を判断できますか？</summary><div class="faq-answer"><p>アプリは測定済みの値を記録し、変化を振り返るためのものです。診断・治療や病気の予防に関する医学的判断を行いません。スマートフォンだけで血圧を測る機能もありません。医学的な助言、診断、治療については医師などの医療専門家に相談してください。</p></div></details>
+    </div>
+    <section class="policy-section"><h2>解決しない場合は</h2><p>利用している版、OS、ブラウザ、操作の手順を添えてお問い合わせください。血圧値や個人情報が分かる写真・CSVは原則として添付しないでください。</p><p><a class="email-link" href="mailto:dotabata21.apps@gmail.com">dotabata21.apps@gmail.com</a></p><p><a href="guide.html">使い方へ →</a>　<a href="privacy.html">プライバシーポリシーへ →</a></p></section>
+    <a class="back-link" href="index.html">← 血圧記録くんについて</a>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© 2026 dotabata21 Apps</small>
+      <a href="guide.html">使い方</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="licenses.html">OSSライセンス</a>
+      <a href="#top">先頭へ ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

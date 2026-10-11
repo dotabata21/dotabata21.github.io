@@ -131,3 +131,63 @@ p:last-child { margin-bottom: 0; }
   .policy-section { break-inside: avoid; }
   a { color: inherit; }
 }
+
+/* Official guide expansion: keep the existing palette, artwork and typography. */
+button { font: inherit; }
+button:focus-visible, summary:focus-visible { outline: 3px solid #2879b5; outline-offset: 4px; }
+.site-header nav { gap: 4px 18px; }
+.hero-links { display: flex; justify-content: center; gap: 8px 30px; flex-wrap: wrap; margin-top: 14px; }
+.hero-links a { min-height: 44px; display: inline-flex; align-items: center; font-size: .93rem; }
+.medical-note { border-left: 3px solid #94b9d4; padding-left: 16px; font-size: .94rem; }
+.versions-section, .web-section, .camera-section { margin-top: 64px; scroll-margin-top: 24px; }
+.section-heading > p:not(.eyebrow) { margin-top: 12px; color: var(--muted); max-width: 760px; }
+.version-grid, .info-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.version-card { border: 1px solid var(--line); border-radius: 14px; padding: 28px; background: #f7fafd; display: flex; flex-direction: column; }
+.version-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 12px; margin-bottom: 16px; }
+.release-status { border: 1px solid #ccdce8; background: #fff; padding: 1px 9px; border-radius: 5px; font-size: .76rem; color: var(--muted); }
+.release-status.is-live { color: var(--blue); }
+.version-card > p:not(.small-note) { color: var(--muted); flex-grow: 1; }
+.version-card .button-link { width: 100%; }
+.button-link:disabled { color: #546b7f; background: #eef2f6; border-color: #c9d7e2; cursor: default; opacity: 1; }
+.small-note { font-size: .9rem; color: var(--muted); margin-top: 12px; }
+.info-grid { margin-block: 24px; }
+.info-card { background: #f7fafd; border-top: 2px solid #c7deef; padding: 20px 22px; }
+.info-card h3 { font-size: 1.06rem; margin-bottom: 12px; }
+.info-card p { color: var(--muted); }
+.web-section > p, .camera-section > p { max-width: 920px; }
+.data-section { margin-top: 56px; padding: 32px; background: var(--pale); border-radius: 16px; scroll-margin-top: 24px; }
+.data-section h2 { margin-bottom: 18px; }
+.data-section .button-link { margin-top: 8px; }
+.plain-list { padding-left: 1.3em; margin-bottom: 22px; }
+.plain-list li { padding-bottom: 8px; }
+.policy-section h3 { font-size: 1.08rem; margin-block: 26px 12px; }
+.steps { padding-left: 1.4em; margin-block: 16px 24px; }
+.steps li { padding-block: 5px; padding-left: 4px; }
+.faq-list { margin-bottom: 30px; }
+.faq-item { border-top: 1px solid var(--line); scroll-margin-top: 24px; }
+.faq-item:last-child { border-bottom: 1px solid var(--line); }
+.faq-item summary { min-height: 60px; padding: 18px 10px 18px 6px; font-weight: 600; cursor: pointer; line-height: 1.6; }
+.faq-item summary::marker, .license-item summary::marker { color: var(--blue); }
+.faq-answer { padding: 0 16px 22px 26px; color: var(--muted); }
+.license-item { border: 1px solid var(--line); border-radius: 8px; margin-top: 12px; }
+.license-item summary { padding: 14px 16px; cursor: pointer; min-height: 48px; }
+.license-item summary span { font-weight: 600; }
+.license-item summary small { display: block; margin-left: 16px; color: var(--muted); }
+.license-item pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .82rem; line-height: 1.65; margin: 0; padding: 18px; border-top: 1px solid var(--line); font-family: ui-monospace, Consolas, monospace; }
+[hidden] { display: none !important; }
+@media (max-width: 900px) { .site-header nav { gap: 0 20px; } }
+@media (max-width: 620px) {
+  .brand { white-space: normal; max-width: 100%; }
+  .site-header nav { font-size: .83rem; gap: 0 18px; }
+  .hero-links { justify-content: flex-start; gap: 0 20px; }
+  .versions-section, .web-section, .camera-section { margin-top: 42px; }
+  .version-grid, .info-grid { grid-template-columns: 1fr; gap: 18px; }
+  .version-card { padding: 22px 20px; }
+  .data-section { margin-top: 36px; padding: 23px 20px; }
+  .info-card { padding: 18px 20px; }
+  .faq-answer { padding: 0 8px 20px 20px; }
+  .policy-contents a { display: inline-block; min-height: 36px; }
+  .license-item summary { padding-inline: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print { .versions-section button, .hero-links { display: none; } .faq-item, .license-item { break-inside: avoid; } }

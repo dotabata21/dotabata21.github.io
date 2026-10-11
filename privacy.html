@@ -3,144 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="血圧記録くんのプライバシーポリシー。記録の保存、カメラ、CSV / TSV、バックアップ、広告、データの削除についてご案内します。">
+  <meta name="description" content="血圧記録くんAndroid版、Web版、公式紹介サイトの保存先、OCR画像、バックアップ、広告、ホスティング、削除と問い合わせの情報の取り扱い。">
   <meta name="theme-color" content="#edf5fc">
-  <title>血圧記録くん プライバシーポリシー | dotabata21 Apps</title>
+  <meta name="robots" content="index,follow">
+  <title>プライバシーポリシー | 血圧記録くん Android・Web</title>
+  <link rel="canonical" href="https://dotabata21.github.io/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="血圧記録くん | dotabata21 Apps">
+  <meta property="og:title" content="プライバシーポリシー | 血圧記録くん Android・Web">
+  <meta property="og:description" content="血圧記録くんAndroid版、Web版、公式紹介サイトの保存先、OCR画像、バックアップ、広告、ホスティング、削除と問い合わせの情報の取り扱い。">
+  <meta property="og:url" content="https://dotabata21.github.io/privacy.html">
+  <meta property="og:image" content="https://dotabata21.github.io/images/blood-pressure-kun-hero.png">
+  <meta property="og:image:width" content="2048">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="血圧記録くんのキャラクターとアプリ名">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="images/blood-pressure-kun-icon.png">
+  <link rel="apple-touch-icon" href="images/blood-pressure-kun-icon.png">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/site.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="dotabata21 Apps トップページ">dotabata21 <span>Apps</span></a>
-      <nav aria-label="メインナビゲーション">
-        <a href="index.html#about">アプリについて</a>
-        <a href="privacy.html" aria-current="page">プライバシーポリシー</a>
-        <a href="#contact">お問い合わせ</a>
-      </nav>
+      <nav aria-label="メインナビゲーション"><a href="index.html">アプリについて</a><a href="guide.html">使い方</a><a href="faq.html">FAQ</a><a href="privacy.html" aria-current="page">プライバシー</a><a href="index.html#contact">お問い合わせ</a></nav>
     </div>
   </header>
-
   <main id="main" class="container policy-container">
-    <header class="policy-heading">
-      <p class="eyebrow">PRIVACY POLICY</p>
-      <h1>血圧記録くん<br>プライバシーポリシー</h1>
-      <p>dotabata21（以下「提供者」）は、Androidアプリ「血圧記録くん」（以下「本アプリ」）における情報の取り扱いについて、以下のとおりご案内します。</p>
-      <p class="policy-date">最終更新日：<time datetime="2026-10-04">2026年10月4日</time></p>
-    </header>
-
-    <nav class="policy-contents" aria-labelledby="contents-title">
-      <h2 id="contents-title">このページの内容</h2>
-      <ol>
-        <li><a href="#information">本アプリで取り扱う情報</a></li>
-        <li><a href="#camera">カメラと血圧計読み取り機能</a></li>
-        <li><a href="#files">CSV / TSV、バックアップ・復元</a></li>
-        <li><a href="#backup">Androidのバックアップ・端末移行</a></li>
-        <li><a href="#advertising">広告について</a></li>
-        <li><a href="#sharing">第三者への提供</a></li>
-        <li><a href="#deletion">データの保存と削除</a></li>
-        <li><a href="#account">アカウントについて</a></li>
-        <li><a href="#age">対象年齢</a></li>
-        <li><a href="#changes">本プライバシーポリシーの変更</a></li>
-        <li><a href="#contact">お問い合わせ</a></li>
-      </ol>
-    </nav>
-
-    <section id="information" class="policy-section">
-      <h2>1. 本アプリで取り扱う情報</h2>
-      <p>本アプリでは、利用者が入力または取り込んだ以下の情報を取り扱います。</p>
-      <ul>
-        <li>最高血圧、最低血圧</li>
-        <li>脈拍</li>
-        <li>測定日時、時間帯</li>
-        <li>メモ</li>
-        <li>記録の作成・更新日時</li>
-        <li>CSV / TSVから取り込んだ記録</li>
-        <li>アプリの表示設定、言語設定等</li>
-      </ul>
-      <p>これらの血圧記録等は、原則として利用者の端末内に保存されます。提供者が運営するサーバーへ、血圧値、脈拍、メモ等の記録内容を送信する機能はありません。</p>
-    </section>
-
-    <section id="camera" class="policy-section">
-      <h2>2. カメラと血圧計読み取り機能</h2>
-      <p>本アプリには、スマートフォンのカメラを使って血圧計の表示を読み取り、入力を補助する機能があります。この機能を利用する場合のみ、カメラへのアクセス許可を求めます。</p>
-      <p>撮影した画像は、CameraXおよびOpenCVを使用して端末内で処理します。ギャラリー、MediaStore、アプリ内の画像ファイル等へ保存せず、読み取りのためにクラウドへ送信することもありません。</p>
-      <p>読み取った値は自動保存しません。利用者が内容を確認し、必要に応じて修正したうえで「記録する」操作を行った場合に保存します。</p>
-    </section>
-
-    <section id="files" class="policy-section">
-      <h2>3. CSV / TSV、バックアップ・復元</h2>
-      <p>本アプリは、血圧記録のCSV出力、復元、CSV / TSVからの取り込みを提供します。保存先や読み込み元は、Androidのファイル選択機能を利用して、利用者自身が選択します。</p>
-      <p>Google Drive等のクラウドストレージを選択した場合は、そのサービスのプライバシーポリシーや利用条件が適用されます。本アプリが利用者の意思にかかわらず、血圧記録を独自にクラウドへアップロードすることはありません。</p>
-      <p>CSVファイルは暗号化されていません。保存場所や共有先にご注意ください。</p>
-    </section>
-
-    <section id="backup" class="policy-section">
-      <h2>4. Androidのバックアップ・端末移行</h2>
-      <p>血圧記録データは、Androidの通常のクラウドバックアップ対象から除外しています。一方、対応するAndroid端末間のデータ移行機能では、記録データが移行される場合があります。</p>
-      <p>実際の移行可否や動作は、Androidのバージョン、端末メーカー、移行方法等によって異なります。記録を保管するため、本アプリのCSVバックアップ機能もあわせてご利用ください。</p>
-    </section>
-
-    <section id="advertising" class="policy-section">
-      <h2>5. 広告について</h2>
-      <p>初回公開版では、Google AdMobを利用した広告表示を予定しています。Google Mobile Ads SDKにより、広告配信等のため、以下のような情報が自動的に収集・利用される場合があります。</p>
-      <ul>
-        <li>IPアドレスから推定されるおおまかな地域情報</li>
-        <li>端末または広告に関連する識別情報</li>
-        <li>アプリや広告の利用状況</li>
-        <li>診断情報、クラッシュ等の技術情報</li>
-        <li>広告との操作情報</li>
-      </ul>
-      <p>本アプリは、血圧値、脈拍、メモ、CSV内容、撮影画像を広告リクエストへ渡す処理を行いません。</p>
-      <p>地域によって必要な場合は、Google User Messaging Platform（UMP）を利用して、広告およびプライバシーに関する同意・選択肢を提供する予定です。</p>
-      <p class="policy-note">本番広告の配信およびUMPによる同意確認は、現在準備中です。公開時の実装内容に合わせて、本ページの内容を最終確認・更新します。</p>
-      <!-- v0.9.5で本番AdMob + UMPを実装した後、採用SDKの挙動・同意処理と本節を照合する。 -->
-      <p>Googleによる情報の取り扱いについては、<a href="https://policies.google.com/privacy?hl=ja">Googleプライバシーポリシー</a>をご確認ください。</p>
-    </section>
-
-    <section id="sharing" class="policy-section">
-      <h2>6. 第三者への提供</h2>
-      <p>提供者が、血圧記録、脈拍、メモ、撮影画像等を第三者へ販売または提供することはありません。ただし広告配信に伴い、Google AdMobが広告配信、分析、不正防止等の目的で情報を収集・処理する場合があります。</p>
-    </section>
-
-    <section id="deletion" class="policy-section">
-      <h2>7. データの保存と削除</h2>
-      <p>血圧記録は、利用者が削除するまで端末内に保存されます。本アプリでは、個別の記録削除と、すべての記録の削除を行うことができます。</p>
-      <p>Androidのアプリデータを消去した場合や、本アプリをアンインストールした場合、端末内のアプリ専用領域に保存されたデータは削除されます。</p>
-      <p>利用者自身が別の場所へ保存したCSVや、別端末へ移行済みのデータは、それぞれの保存先で削除する必要があります。</p>
-    </section>
-
-    <section id="account" class="policy-section">
-      <h2>8. アカウントについて</h2>
-      <p>本アプリには利用者アカウントの作成機能はありません。氏名、メールアドレス、住所等の登録を求めることもありません。</p>
-      <p>ただし、メモ欄へ利用者自身が個人情報を入力した場合、その内容は記録データの一部として端末内に保存されます。</p>
-    </section>
-
-    <section id="age" class="policy-section">
-      <h2>9. 対象年齢</h2>
-      <p>本アプリは18歳以上の利用者を主な対象としています。子ども向けアプリとして設計していません。</p>
-    </section>
-
-    <section id="changes" class="policy-section">
-      <h2>10. 本プライバシーポリシーの変更</h2>
-      <p>本アプリの機能、広告、利用する外部サービス等を変更した場合、本プライバシーポリシーを改定することがあります。重要な変更がある場合は、本ページまたはアプリ内等でご案内します。</p>
-    </section>
-
-    <section id="contact" class="policy-section policy-contact">
-      <h2>11. お問い合わせ</h2>
-      <dl>
-        <dt>提供者</dt><dd>dotabata21</dd>
-        <dt>お問い合わせ</dt><dd><a href="mailto:dotabata21.apps@gmail.com">dotabata21.apps@gmail.com</a></dd>
-      </dl>
-    </section>
-    <a class="back-link" href="index.html">← dotabata21 Appsへ戻る</a>
+    <header class="policy-heading"><p class="eyebrow">PRIVACY POLICY</p><h1>血圧記録くん<br>プライバシーポリシー</h1><p>Android版・Web版・公式紹介サイトの情報の取り扱いをご案内します。</p><p class="policy-date">最終更新日：<time datetime="2026-10-11">2026年10月11日</time></p></header>
+    <nav class="policy-contents" aria-labelledby="contents-title"><h2 id="contents-title">このページの内容</h2><ol><li><a href="#scope">このポリシーの対象</a></li><li><a href="#information">記録と設定の保存先</a></li><li><a href="#camera">カメラ・画像とOCR</a></li><li><a href="#files">CSV／TSV・手動バックアップ</a></li><li><a href="#web-backup">Web版の保存領域・自動バックアップ</a></li><li><a href="#backup">Androidのクラウドバックアップ・端末移行</a></li><li><a href="#advertising">広告・同意・アクセス解析</a></li><li><a href="#hosting">サイト配信に必要な通信</a></li><li><a href="#sharing">第三者への提供</a></li><li><a href="#deletion">保存・削除とアカウント</a></li><li><a href="#age">対象年齢と変更</a></li><li><a href="#contact">お問い合わせ</a></li></ol></nav>
+    <section id="scope" class="policy-section"><h2>1. このポリシーの対象</h2><p>dotabata21 Apps（以下「提供者」）は、Android版「血圧記録くん」、Web版「血圧記録くん Web」、この公式紹介サイトにおける情報の取り扱いを、以下のとおり説明します。</p><p>Android版：<span data-release-status="android">公開準備中</span>。Web版：<span data-release-status="web">公開準備中</span>。Web版の正式URLは https://bpr-kun.web.app/ です。<span data-release-pending="web">現在は正式公開前のため、利用ボタンは無効です。</span>現在の実装で確認できる内容と、今後の広告導入予定を区別しています。提供者へのお問い合わせは、末尾の公開メールアドレスをご利用ください。</p></section>
+    <section id="information" class="policy-section"><h2>2. 記録と設定の保存先</h2><p>最高血圧・最低血圧、任意の脈拍、測定日・時刻、時間帯、メモ、タイムゾーン等の日時情報、記録ID、作成・更新日時、取り込み元の情報、表示・言語設定等を扱います。メモや取り込みファイルに利用者が記入した個人情報も、記録の一部として扱われます。</p><ul><li><strong>Android版：</strong>記録はアプリ専用の内部領域のRoomデータベースへ保存します。アプリ独自のDB暗号化やパスワード保護は実装していません。</li><li><strong>Web版：</strong>記録は利用中の端末のブラウザ内（IndexedDB）へ保存します。ブラウザ、プロファイル、URLのオリジンごとに別の保存領域です。クラウド上に個人の血圧記録を保管し、自動同期するサービスではありません。</li></ul><p>血圧値、脈拍、メモ等の記録内容を、提供者が運営するサーバーへ送信する機能はありません。共有端末での利用や、端末の画面ロック・ブラウザのプロファイル管理にもご注意ください。</p></section>
+    <section id="camera" class="policy-section"><h2>3. カメラ・画像とOCR</h2><p>カメラは血圧計の表示を読み取り、入力を補助するために利用します。利用時にだけカメラへのアクセス許可を求め、拒否しても手入力ができます。Web版では対応するファイル選択機能から既存画像を読み込むこともできます。</p><p>Android版はCameraXとOpenCV、Web版はブラウザのカメラ機能と同梱OpenCVによって端末内で処理します。画像をOCR用クラウドへ送る経路はなく、アプリからギャラリー、画像ファイル、キャッシュ・一時画像ファイル、記録DBへ保存する経路もありません。処理や確認画面に必要な一時メモリとして扱い、終了時に解放します。選択した元の画像ファイルは元の保存先に残ります。</p><p>読み取った候補は、利用者が確認して入力欄へ反映し、通常の記録操作をした場合に保存します。OCRだけで自動保存しません。ブラウザやOSの権限・カメラ仕様により利用できる機能は異なります。</p></section>
+    <section id="files" class="policy-section"><h2>4. CSV／TSV・手動バックアップ</h2><p>標準CSVによるバックアップ・復元と、他形式のCSV／TSVの取り込みを提供します。保存先や読み込み元は利用者が選びます。Web版では、対応する保存先選択機能または通常のダウンロードを使います。</p><p>Google Drive等のクラウド保存先を利用者が選んだ場合、そのサービスの保存・同期・削除やプライバシー条件も適用されます。アプリが自動的に血圧記録のクラウド保存先を指定することはありません。</p><p>CSVは暗号化されていません。チェックサムは整合性の確認用で、暗号化や電子署名ではありません。メモ等も含まれるため、保存先や共有先に注意してください。Android版の作業用ファイル・検証DBはバックアップ対象外領域に一時作成し、完了・キャンセル時等や次の対応セッションで清掃します。Web版の復元候補は一時メモリで管理し、確認後に記録DBへ追加します。</p></section>
+    <section id="web-backup" class="policy-section"><h2>5. Web版の保存領域・自動バックアップ</h2><p>ブラウザのサイトデータ削除、プライベートモードの終了、保存容量やブラウザの判断等による領域消去で、記録や設定が失われる場合があります。保存保持のリクエストが許可されても、利用者による明示削除や端末故障を防ぐ保証ではありません。</p><p>対応ブラウザの自動バックアップは初期OFFです。説明を確認し、利用者が保存先ファイルを選んで許可した場合、そのファイルへのアクセス情報と設定をブラウザ内に保持します。次の新しい記録が正常に保存された後から、全記録を同じCSVへ上書きします。編集・削除・復元・他形式取り込みでは更新しません。保存先の権限等により失敗することがあり、手動CSVも推奨します。</p><p>自動バックアップをOFFにしても、すでに書き出したCSVは削除されません。保存領域を消すと自動バックアップの設定も失われる場合がありますが、外部の保存先のCSVは別に管理してください。</p></section>
+    <section id="backup" class="policy-section"><h2>6. Androidのクラウドバックアップ・端末移行</h2><p>現在、記録DBはAndroidの自動クラウドバックアップから除外しています。対応するAndroid端末間のデータ移行ではDB領域の移行を許可しています。対象はDB領域全体であり、設定を含むすべてのアプリ情報の移行を保証するものではありません。</p><p>実際の可否はOS、メーカー、移行方法等で異なり、古いOSでは記録DBの移行も対象外です。機種変更時はCSVの控えもご利用ください。Web版のブラウザ内記録がAndroidのアプリDBと自動同期する機能はありません。</p></section>
+    <section id="advertising" class="policy-section"><h2>7. 広告・同意・アクセス解析</h2><h3>この公式紹介サイトと現在のWeb版</h3><p>現時点ではGoogle AdSense等の広告タグ・外部広告SDK、Google Analytics等のアクセス解析タグを導入していません。この紹介サイトは、独自の追跡Cookieや利用者識別用ストレージを使いません。Web版のIndexedDBやアプリファイルのキャッシュは、記録保存・設定・オフライン利用のためのものです。</p><p>将来AdSense等を導入する場合は、利用サービス、Cookie等の情報、必要な同意・選択肢に合わせて、このポリシーを改定します。現在導入済みであるかのようには扱いません。</p><h3>Android版</h3><p>Google AdMobの広告SDKと、Google User Messaging Platform（UMP）による同意処理を導入しています。開発・クローズドテストではGoogle公式テスト広告を使用し、本公開では本番広告を表示する予定です。現在の準備Releaseは本番ID未設定のため広告OFFです。テスト広告であってもGoogleへの通信は発生します。</p><p>広告配信、分析、不正防止等のため、IPアドレス由来のおおまかな位置、アプリや広告との操作、診断情報、デバイスその他の識別子がGoogleに収集・共有される場合があります。広告ID権限と電話状態権限は除外していますが、それだけで他の識別子・診断情報がすべて停止するわけではありません。</p><p>血圧・脈拍・測定日時・時間帯・メモ・CSV／TSV・撮影画像・OCR候補を広告リクエストへ渡す処理はありません。必要な同意フォームを提示し、UMPで広告要求可否を確認します。再選択が必要な場合は「設定→アプリ情報→プライバシー設定」から選択できます。一般利用者向けの広告ON／OFFスイッチとは別です。</p><p>Googleによる取り扱いは<a href="https://policies.google.com/privacy?hl=ja">Googleプライバシーポリシー</a>および<a href="https://policies.google.com/technologies/partner-sites?hl=ja">Googleサービスを利用するサイトやアプリからの情報の利用</a>をご確認ください。</p></section>
+    <section id="hosting" class="policy-section"><h2>8. サイト配信に必要な通信</h2><p>独自の広告・アクセス解析を導入していなくても、サイトやアプリのファイルを受け取るための通信は発生します。通信先や必要な処理は、記録を端末内で保存することとは区別されます。</p><ul><li><strong>公式紹介サイト：</strong>GitHub Pagesで配信します。GitHubはサービスのセキュリティのため、閲覧者のIPアドレスを記録・保存すると説明しています。<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pagesの説明</a>、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubのプライバシーに関する声明</a>をご参照ください。</li><li><strong>Web版：</strong>Firebase Hostingでの配信を予定し、現在同サービスの試験配信で確認しています。GoogleはHostingへの接続に伴うIPアドレス等を処理すると説明しています。これは血圧記録をFirebaseのクラウドDBへ送ることとは別です。<a href="https://firebase.google.com/support/privacy">Firebaseのプライバシーとセキュリティ</a>をご参照ください。</li></ul><p>外部リンクを開いた先や、利用者が選択したクラウド保存先には、そのサービスの規約・情報の取り扱いが適用されます。</p></section>
+    <section id="sharing" class="policy-section"><h2>9. 第三者への提供</h2><p>提供者がアプリ内の血圧記録・メモ・OCR画像を第三者へ自動送信、販売する機能はありません。広告・ホスティング事業者の接続情報等の処理と、利用者自身がCSVを共有する操作は、前述のとおり別に取り扱われます。</p><p>この紹介サイトにアプリの記録DBを読み取る仕組みはありません。健康記録や病歴に基づく広告向けの利用者分類・ターゲティングを行うコードもありません。</p></section>
+    <section id="deletion" class="policy-section"><h2>10. 保存・削除とアカウント</h2><p>Android版・Web版とも、利用者アカウントの作成や氏名・住所等の登録は求めません。保存した記録は、履歴の個別削除や設定の全記録削除で削除できます。全記録削除は元に戻せません。</p><p>Androidのアプリデータ消去・アンインストールや、Web版のサイトデータ消去で、端末内のアプリ保存領域の情報は失われます。Web版をホーム画面から取り除くだけで、ブラウザ内の記録が必ず削除されるとは限りません。</p><p>全記録削除は、保存済みのCSV、別端末の記録、表示設定や第三者SDKのデータまで一括削除する機能ではありません。別の保存先のファイルや、広告事業者が保持する情報は各サービスで管理してください。</p></section>
+    <section id="age" class="policy-section"><h2>11. 対象年齢と変更</h2><p>血圧記録くんは18歳以上の利用者を主な対象とし、子ども向けアプリとして設計していません。年齢認証によって未成年のアクセスを制限する機能を実装したという意味ではありません。</p><p>機能・配布構成・広告・外部サービスを変更した場合、本ポリシーを改定することがあります。改定日は本ページへ表示します。医学的な助言、診断、治療については医療専門家へご相談ください。</p></section>
+    <section id="contact" class="policy-section policy-contact"><h2>12. お問い合わせ</h2><p>お問い合わせでは、送信したメールアドレスと本文が提供者に届き、問い合わせ対応のために利用します。受付にはGmailを使用します。必要な情報だけをお送りいただき、血圧値・メモ・個人情報を含む写真やCSVの添付は原則としてお控えください。</p><dl><dt>提供者</dt><dd>dotabata21 Apps</dd><dt>公開問い合わせ先</dt><dd><a href="mailto:dotabata21.apps@gmail.com">dotabata21.apps@gmail.com</a></dd></dl></section>
+    <a class="back-link" href="index.html">← 公式紹介サイトへ戻る</a>
   </main>
-
   <footer class="site-footer">
     <div class="container footer-inner">
-      <small>© 2026 dotabata21</small>
-      <a href="index.html">トップページ</a>
-      <a href="#top">ページの先頭へ ↑</a>
+      <small>© 2026 dotabata21 Apps</small>
+      <a href="guide.html">使い方</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="licenses.html">OSSライセンス</a>
+      <a href="#top">先頭へ ↑</a>
     </div>
   </footer>
 </body>
