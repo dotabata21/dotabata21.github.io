@@ -1,8 +1,8 @@
 'use strict';
-// Owner-approved release switches. Keep false until the actual public release is verified.
+// Owner-verified Web live release. Android remains unavailable until its Play listing is published.
 // Android URL must be copied from the published Play listing, never guessed.
 const releases = Object.freeze({
-  web: { published: false, url: 'https://bpr-kun.web.app/' },
+  web: { published: true, url: 'https://bpr-kun.web.app/' },
   android: { published: false, url: null }
 });
 

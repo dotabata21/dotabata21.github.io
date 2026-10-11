@@ -1,6 +1,6 @@
 # 血圧記録くん 公式紹介・利用案内サイト
 
-既存の白・淡い青と公式画像を維持した静的サイト。2026-10-11に所有者が正式公開を承認。紹介サイトの正式URLは https://dotabata21.github.io/、プライバシーポリシーは https://dotabata21.github.io/privacy.html。Webアプリ本体はまだlive未公開のため「近日公開」を維持。
+既存の白・淡い青と公式画像を維持した静的サイト。2026-10-11に所有者が正式公開を承認。紹介サイトの正式URLは https://dotabata21.github.io/、プライバシーポリシーは https://dotabata21.github.io/privacy.html。Webアプリ本体も正式公開済み。正式URLは https://bpr-kun.web.app/、公開バージョンはv0.8.3、所有者による公開日時は2026年10月11日18:11:48（日本時間）。Android版はGoogle Play未公開のため、準備中・リンク未設定を維持。
 
 ## 構成
 
@@ -28,14 +28,14 @@ Androidはv0.9.5 / 95000、Webは参照時v0.8.3。両方とも参照のみ。We
 
 自動バックアップは初期OFF。次の新規記録成功後に全件を書き出し、編集・削除・復元・汎用取り込みでは更新しない。iPhoneはWebKit模擬確認と実機確認を区別し、実機の最終確認済みとは書かない。AndroidとWebのカメラフォーカスの違いも記載。
 
-## 正式公開後に入口を有効にする
+## 公開状態と今後の切替
 
-js/site.jsのreleasesを編集する。現状は両方published:falseで、JavaScriptが無効でもボタンはdisabled。設定していないPlay URLを推測して作らない。
+js/site.jsのreleasesはweb.published:true、android.published:false、android.url:null。Web版の入口はJavaScriptで正式URLへのリンクとして有効化する。設定していないPlay URLを推測して作らない。
 
-1. Webのlive公開を所有者が確認した後に、web.publishedをtrueへ。所有者が確定した正式URLはhttps://bpr-kun.web.app/。現在live未デプロイのためボタンは「近日公開」の無効状態。フラグの切替だけで「血圧記録くん Webを開く」へ変わる。Previewは掲載しない。スクリプトはこの正規URL以外を許可しない。
+1. Webはlive正式公開の連絡に基づきフラグをON。「血圧記録くん Webを開く」からhttps://bpr-kun.web.app/へ遷移する。Previewは掲載しない。スクリプトはこの正規URL以外を許可しない。
 2. AndroidのPlay掲載を確認した後に、android.urlへ実際のストアURLをコピーし、android.publishedをtrueへ。nullや不正URLは無効のまま。
 3. privacy.htmlには確定した正式URLを記載。公開ステータスはフラグに同期する。このREADMEの状態、配布版の機能差・保存先・広告の説明は公開前に照合する。
-4. 入口・ステータス・公開準備中の注記はスクリプトが同期。iPhone確認等の注意点は公開フラグに連動させず維持する。
+4. Web版の入口・公開中表示はスクリプトが同期。Android版の準備中表示とiPhone確認等の注意点は維持する。
 
 公開切替は本番URL確認の代わりではない。ローカル検証用URLやPreviewへ差し替えない。
 
@@ -66,13 +66,13 @@ GitHub Pagesは静的配信なのでビルド・npmインストール不要。�
 
 配信事業者のIP処理は独自解析と別に説明。[GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection)、[Firebase](https://firebase.google.com/support/privacy)を参照。
 
-## ローカル確認結果（2026-10-11）
+## 紹介サイト拡張時のローカル確認結果（2026-10-11、Web入口有効化前）
 
 - WindowsのChrome / Playwrightによるブラウザ確認。320 / 360 / 390 / 412 / 1280pxで全5ページ、計25組を確認。
 - 横方向のはみ出し、タイトル／description／canonical／OGP／favicon、重複ID、内部リンク・アンカー、画像読込、ナビの44px以上の操作高さを確認。
 - FAQ全12問の開閉、OSS全文14件の参照元との一致、開いたライセンスの折り返しを確認。
 - 320pxで文字を拡大して全5ページを確認。ブランド名は狭い画面で折り返せるよう調整。
-- JavaScript無効時も公開未確認の入口はdisabled。Web公開フラグをブラウザ内だけ一時変更し、正式URLへのリンク・公開中バッジ・準備注記の同期を確認。実ファイルの公開フラグはfalseを維持。
+- JavaScript無効時も公開未確認の入口はdisabled。Web公開フラグをブラウザ内だけ一時変更し、正式URLへのリンク・公開中バッジ・準備注記の同期を確認。その確認時点では実ファイルの公開フラグはfalseだった。現在は下記の正式公開対応によりtrue。
 - ローカル表示で外部への自動リクエスト・JavaScriptエラーなし。外部サービスのページへ遷移した後の挙動は別。
 - 既存の画像2枚はSHA-256一致。git diff --check、新規ファイルの空白確認、変更ファイル10件の照合を実施。
 - 写真、DB、CSV、スクショ、ログ、試験コード、APK/AAB、鍵は変更対象に含めず、広告コード・Publisher ID・ads.txtも追加していない。
@@ -80,3 +80,13 @@ GitHub Pagesは静的配信なのでビルド・npmインストール不要。�
 
 これは紹介サイトのローカル確認であり、Android／Webアプリの回帰試験、iPhone実機確認、AdSense審査、公開サイトの到達性確認ではない。
 スクリーンショット・試験コード・結果JSONは紹介サイトrepoの外へ保存。正式公開操作は、上記の公開元確認後に対象ファイルだけをcommit・pushし、GitHub Pagesのデプロイ結果と外部からの5ページの表示を確認する。
+
+
+## Web正式公開の案内反映（2026-10-11）
+
+- Web公開フラグをON。トップの入口・公開状態、使い方の公開前文言、プライバシーの対象とHosting配信状況を更新。
+- FAQ・OSSページにも未公開前提の文言がないことを点検。iPhone実機の未確認事項は維持。
+- プライバシーの保存、OCR、CSV、広告、削除等の本文は変更しない。正式URLと同日改定日を維持。
+- Android版の準備中状態・Play URL未設定を維持。FirebaseとAndroid／Webアプリ本体へ書き込みは行わない。
+- 対象はREADME.md、index.html、guide.html、privacy.html、js/site.jsの5ファイルのみ。
+- push前に対象差分と本番リンク、PCと320／360／390／412pxを点検し、Pages反映後に外部HTTPSから5ページと本番Webアプリへの遷移を確認する。
