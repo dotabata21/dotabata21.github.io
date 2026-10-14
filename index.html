@@ -45,6 +45,20 @@
       <div class="app-image-wrap"><img class="app-image" src="images/blood-pressure-kun-icon.png" width="1254" height="1254" alt="大きな赤いハート、マスコットと男の子のアプリアイコン" loading="lazy" decoding="async"></div>
       <div><p class="eyebrow">ABOUT THE APP</p><h2 id="about-title">毎日の記録を、<br>振り返りやすく。</h2><p>測定した最高血圧・最低血圧、任意の脈拍を、日時やメモと一緒に残せます。「いつ、どんな値だったか」を履歴で確かめ、期間ごとの統計やグラフで見直せます。</p><p>キャラクターのいるCharacter表示と、すっきりしたSimple表示を選べます。日本語・英語・簡体字・繁体字・韓国語・フランス語に対応しています。</p><p class="medical-note">記録と振り返りのためのアプリです。スマートフォン自体で血圧を測定したり、病気の診断・治療・予防に関する医学的判断を行ったりするものではありません。</p></div>
     </section>
+    <section id="screenshots" class="screenshots-section" aria-labelledby="screenshots-title">
+      <div class="section-heading"><p class="eyebrow">SCREENSHOTS</p><h2 id="screenshots-title">画面イメージ</h2><p>Android版（Character表示）の記録・履歴・分析画面をご紹介します。画像を選ぶと拡大表示できます。</p></div>
+      <div class="screenshot-grid">
+        <figure class="screenshot-card"><a class="screenshot-link" href="images/screenshots/android-record.webp" aria-label="記録画面を拡大表示"><img src="images/screenshots/android-record.webp" width="1080" height="1920" alt="最高血圧・最低血圧・脈拍を入力するAndroid版の記録画面" loading="lazy" decoding="async"></a><figcaption>記録</figcaption></figure>
+        <figure class="screenshot-card"><a class="screenshot-link" href="images/screenshots/android-history.webp" aria-label="履歴画面を拡大表示"><img src="images/screenshots/android-history.webp" width="1080" height="1920" alt="日付・時間帯ごとの測定値を一覧で確認できるAndroid版の履歴画面" loading="lazy" decoding="async"></a><figcaption>履歴</figcaption></figure>
+        <figure class="screenshot-card"><a class="screenshot-link" href="images/screenshots/android-graph.webp" aria-label="分析（グラフ）画面を拡大表示"><img src="images/screenshots/android-graph.webp" width="1080" height="1920" alt="血圧と脈拍の推移を表示するAndroid版の分析グラフ画面" loading="lazy" decoding="async"></a><figcaption>分析（グラフ）</figcaption></figure>
+        <figure class="screenshot-card"><a class="screenshot-link" href="images/screenshots/android-statistics.webp" aria-label="分析（統計）画面を拡大表示"><img src="images/screenshots/android-statistics.webp" width="1080" height="1920" alt="平均・最大・最小や前回比を確認できるAndroid版の分析統計画面" loading="lazy" decoding="async"></a><figcaption>分析（統計）</figcaption></figure>
+      </div>
+      <p class="small-note">画面内の数値は、架空のサンプルデータです。</p>
+    </section>
+    <dialog id="screenshot-preview" class="screenshot-dialog" aria-labelledby="screenshot-preview-title">
+      <div class="screenshot-dialog-heading"><h3 id="screenshot-preview-title">記録</h3><form method="dialog"><button class="screenshot-close" autofocus>閉じる</button></form></div>
+      <img id="screenshot-preview-image" src="images/screenshots/android-record.webp" width="1080" height="1920" alt="Android版の記録画面">
+    </dialog>
     <section id="versions" class="versions-section" aria-labelledby="versions-title">
       <div class="section-heading"><p class="eyebrow">ANDROID &amp; WEB</p><h2 id="versions-title">あなたの環境に合わせて</h2><p>Androidアプリと、ブラウザで使うWeb版。どちらも、日々の記録を振り返るための血圧記録くんです。</p></div>
       <div class="version-grid">
@@ -95,5 +109,28 @@
       <a href="#top">先頭へ ↑</a>
     </div>
   </footer>
+  <script>
+    (() => {
+      const grid = document.querySelector('.screenshot-grid');
+      const dialog = document.getElementById('screenshot-preview');
+      if (!grid || !dialog || typeof dialog.showModal !== 'function') return;
+      const image = document.getElementById('screenshot-preview-image');
+      const title = document.getElementById('screenshot-preview-title');
+      grid.addEventListener('click', event => {
+        const link = event.target.closest('.screenshot-link');
+        if (!link || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        image.src = link.href;
+        image.alt = link.querySelector('img').alt;
+        title.textContent = link.closest('figure').querySelector('figcaption').textContent;
+        dialog.showModal();
+      });
+      dialog.addEventListener('click', event => {
+        if (event.target !== dialog) return;
+        const bounds = dialog.getBoundingClientRect();
+        if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+      });
+    })();
+  </script>
 </body>
 </html>
