@@ -57,3 +57,20 @@
   .weight-page .weight-section { margin-top: 42px; }
   .weight-page .weight-data-panel { margin-top: 36px; padding: 23px 20px; }
 }
+
+/* Android screenshots: preserve the complete image and its original ratio. */
+.weight-page .weight-screen-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 18px; }
+.weight-page .weight-screen-card { padding: 12px; }
+.weight-page .weight-screen-link { display: block; max-width: 190px; margin-inline: auto; border-radius: 9px; cursor: zoom-in; }
+.weight-page .weight-screen-link img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 9px; }
+.weight-page .weight-screen-card figcaption { margin-top: 14px; font-weight: 600; }
+.weight-page .weight-screen-dialog { width: fit-content; max-width: calc(100% - 24px); max-height: calc(100dvh - 24px); padding: 16px; border: 1px solid var(--line); border-radius: 14px; color: var(--ink); background: #fff; }
+.weight-page .weight-screen-dialog::backdrop { background: rgba(35, 58, 45, .58); }
+.weight-page .weight-screen-dialog-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 14px; }
+.weight-page .weight-screen-dialog-heading h3 { font-size: 1rem; }
+.weight-page .weight-screen-dialog-heading form { margin: 0; }
+.weight-page .weight-screen-close { min-height: 44px; padding: 8px 12px; border: 1px solid #a9c5a9; border-radius: 8px; color: var(--blue); background: #f5f9f2; cursor: pointer; }
+.weight-page .weight-screen-dialog img { width: auto; height: auto; max-width: 100%; max-height: calc(100dvh - 150px); margin-inline: auto; object-fit: contain; border: 1px solid var(--line); border-radius: 9px; }
+@media (max-width: 1000px) { .weight-page .weight-screen-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .weight-page .weight-screen-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .weight-page .weight-screen-grid { grid-template-columns: 1fr; } .weight-page .weight-screen-link { width: 180px; max-width: 100%; } }

@@ -22,6 +22,7 @@
   <link rel="icon" type="image/webp" href="/images/weight-log/weight-log-icon.webp">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/weight-log.css">
+  <script src="/js/weight-gallery.js" defer></script>
 </head>
 <body id="top" class="weight-page">
   <a class="skip-link" href="#main">本文へ移動</a>
@@ -57,10 +58,21 @@
       </div>
       <p class="small-note">Android版は端末内で体重計の表示を読み取るOCRを備え、候補を確認してから入力します。Web版はOCR・自動CSVバックアップ・クラウド同期に対応していません。</p>
     </section>
-    <section id="screenshots" class="weight-section" aria-labelledby="screenshots-title" hidden>
-      <h2 id="screenshots-title">アプリの画面イメージ</h2>
-      <div class="weight-screen-grid"></div>
+    <section id="screenshots" class="weight-section" aria-labelledby="screenshots-title">
+      <div class="section-heading"><p class="eyebrow">SCREENSHOTS</p><h2 id="screenshots-title">アプリの画面</h2><p>体重記録くんの主な画面をご紹介します。Android版 v0.1.2（12000）の画面です。Web版とは画面や対応機能が異なります。</p></div>
+      <div class="weight-screen-grid">
+        <figure class="weight-screen-card"><a class="weight-screen-link" href="/images/weight-log/screenshots/weight-record.webp" aria-label="Android版の記録画面を拡大表示"><img src="/images/weight-log/screenshots/weight-record.webp" width="1080" height="2400" alt="Android版の記録画面。体重・体脂肪率・ウエストを入力する欄" loading="lazy" decoding="async"></a><figcaption>記録</figcaption></figure>
+        <figure class="weight-screen-card"><a class="weight-screen-link" href="/images/weight-log/screenshots/weight-history.webp" aria-label="Android版の履歴画面を拡大表示"><img src="/images/weight-log/screenshots/weight-history.webp" width="1080" height="2400" alt="Android版の履歴画面。測定日・時刻と体重・体脂肪率・ウエスト・BMIの一覧" loading="lazy" decoding="async"></a><figcaption>履歴</figcaption></figure>
+        <figure class="weight-screen-card"><a class="weight-screen-link" href="/images/weight-log/screenshots/weight-statistics.webp" aria-label="Android版の統計画面を拡大表示"><img src="/images/weight-log/screenshots/weight-statistics.webp" width="1080" height="2400" alt="Android版の統計画面。平均・最大・最小・前回比を月ごとに表示" loading="lazy" decoding="async"></a><figcaption>統計</figcaption></figure>
+        <figure class="weight-screen-card"><a class="weight-screen-link" href="/images/weight-log/screenshots/weight-graph.webp" aria-label="Android版のグラフ画面を拡大表示"><img src="/images/weight-log/screenshots/weight-graph.webp" width="1080" height="2400" alt="Android版のグラフ画面。架空の5年分の体重推移を週単位の範囲で表示し、目標60kgを破線で表示" loading="lazy" decoding="async"></a><figcaption>グラフ</figcaption></figure>
+        <figure class="weight-screen-card"><a class="weight-screen-link" href="/images/weight-log/screenshots/weight-settings.webp" aria-label="Android版の設定画面を拡大表示"><img src="/images/weight-log/screenshots/weight-settings.webp" width="1080" height="2400" alt="Android版v0.1.2の設定画面。基本データ・表示スタイル・言語・バックアップなどの項目" loading="lazy" decoding="async"></a><figcaption>設定</figcaption></figure>
+      </div>
+      <p class="small-note">画面内の測定値・履歴は、撮影用に作成した架空のサンプルデータです。画像を選ぶと拡大表示できます。</p>
     </section>
+    <dialog id="weight-screen-preview" class="weight-screen-dialog" aria-labelledby="weight-screen-preview-title">
+      <div class="weight-screen-dialog-heading"><h3 id="weight-screen-preview-title">記録（Android版）</h3><form method="dialog"><button class="weight-screen-close" autofocus>閉じる</button></form></div>
+      <img id="weight-screen-preview-image" src="/images/weight-log/screenshots/weight-record.webp" width="1080" height="2400" alt="Android版の記録画面">
+    </dialog>
     <section id="availability" class="weight-section" aria-labelledby="availability-title">
       <div class="section-heading"><p class="eyebrow">AVAILABILITY</p><h2 id="availability-title">提供状況</h2><p>Web版を公開しています。Android版はGoogle Playでの公開準備中です。</p></div>
       <div class="version-grid">
