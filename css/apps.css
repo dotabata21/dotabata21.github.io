@@ -1,0 +1,40 @@
+/* Additions are limited to the new application directory page. */
+.apps-page .apps-intro { padding: 48px 0 36px; }
+.apps-page .apps-intro h1 { margin-bottom: 16px; }
+.apps-page .apps-lead { color: var(--ink); font-size: 1.25rem; margin-bottom: 12px; }
+.apps-page .apps-intro > p:last-child { color: var(--muted); }
+.apps-page .app-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.apps-page .app-card { min-width: 0; padding: 32px; border: 1px solid var(--line); border-top: 4px solid #a9cce6; border-radius: 16px; background: #f7fafd; display: flex; flex-direction: column; }
+.apps-page .app-card-weight { border-top-color: #b5d4b5; }
+.apps-page .app-card-heading { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 22px; align-items: center; margin-bottom: 24px; }
+.apps-page .app-icon-link { display: block; border-radius: 22px; }
+.apps-page .app-icon-link img { border-radius: 22px; width: 112px; }
+.apps-page .app-card-heading .eyebrow { font-size: .64rem; letter-spacing: .1em; }
+.apps-page .app-card h2 { font-size: 1.5rem; }
+.apps-page .app-card h2 a { color: var(--ink); text-decoration: none; }
+.apps-page .app-card h2 a:hover { text-decoration: underline; }
+.apps-page .app-description { color: var(--muted); flex-grow: 1; margin-bottom: 24px; }
+.apps-page .app-availability { margin: 0 0 28px; padding-block: 12px; border-block: 1px solid var(--line); }
+.apps-page .app-availability > div { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px 12px; padding-block: 7px; }
+.apps-page .app-availability dt { font-size: .92rem; }
+.apps-page .app-availability dd { margin: 0; }
+.apps-page .availability-badge { display: inline-block; padding: 2px 12px; border: 1px solid #d3dee7; border-radius: 6px; background: #fff; color: var(--muted); font-size: .8rem; }
+.apps-page .availability-badge.is-available { color: #1b5c91; border-color: #b8d5e9; background: #edf5fc; }
+.apps-page .app-details { width: 100%; justify-content: space-between; }
+.apps-page .availability-note { margin: 22px 0 0; color: var(--muted); font-size: .85rem; }
+.apps-page .apps-contact { margin-block: 56px; padding-top: 28px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+.apps-page .apps-contact h2 { font-size: 1.4rem; margin-bottom: 8px; }
+.apps-page .apps-contact p:not(.eyebrow) { color: var(--muted); font-size: .93rem; }
+@media (max-width: 760px) {
+  .apps-page .app-grid { grid-template-columns: 1fr; gap: 22px; }
+  .apps-page .apps-intro { padding-block: 32px 28px; }
+  .apps-page .app-card { padding: 24px; }
+  .apps-page .apps-contact { margin-block: 40px; }
+}
+@media (max-width: 380px) {
+  .apps-page .app-card { padding: 20px; }
+  .apps-page .app-card-heading { grid-template-columns: 80px minmax(0, 1fr); gap: 14px; }
+  .apps-page .app-icon-link img { width: 80px; border-radius: 16px; }
+  .apps-page .app-card h2 { font-size: 1.25rem; }
+  .apps-page .app-card-heading .eyebrow { font-size: .58rem; }
+}

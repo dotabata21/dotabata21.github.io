@@ -1,0 +1,26 @@
+/* Only the application-directory link on the existing home page. */
+.apps-directory-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 100%;
+  min-height: 52px;
+  padding: 12px 18px;
+  border: 1px solid #a8c7df;
+  border-radius: 10px;
+  color: #1b5c91;
+  background: #edf5fc;
+  font-size: .94rem;
+  font-weight: 600;
+  line-height: 1.7;
+  text-align: left;
+  text-decoration: none;
+}
+.apps-directory-link:hover { background: #e3eff9; border-color: #83aecf; }
+.apps-directory-link > span:first-of-type { min-width: 0; }
+.apps-directory-icon, .apps-directory-arrow { flex-shrink: 0; }
+.apps-directory-arrow { margin-left: 4px; font-size: 1.1em; }
+@media (max-width: 620px) {
+  .apps-directory-link { width: 100%; gap: 10px; padding: 12px 14px; }
+  .apps-directory-link > span:first-of-type { flex-grow: 1; }
+}
