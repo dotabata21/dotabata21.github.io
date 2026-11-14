@@ -35,14 +35,14 @@
   <main id="main" class="container policy-container">
     <header class="policy-heading"><p class="eyebrow">ABOUT &amp; OPEN SOURCE</p><h1>OSSライセンス・利用SDK</h1><p>血圧記録くんはdotabata21 Appsが開発しています。アプリを支えるライブラリのライセンスは、各版のアプリ内でも確認できます。</p></header>
     <section class="policy-section"><h2>公式紹介サイトについて</h2><p>このサイトはHTML・CSSと公開先の切替用JavaScriptで構成し、外部の広告・アクセス解析・UIライブラリを読み込みません。掲載画像は既存の公式サイト素材を使用しています。アプリのライブラリと、この紹介サイトの構成は別です。</p><p><a href="privacy.html">プライバシーポリシー</a>　<a href="/#contact">お問い合わせ</a></p></section>
-    <section class="policy-section"><h2>Android版</h2><p>設定→アプリ情報→オープンソースライセンスから、配布版で使用するライブラリとライセンス表示を確認できます。CameraX、OpenCV、AndroidX、Room等を利用しています。広告SDKの利用条件を、OSSライセンスと同一のものとして扱っていません。</p><p>Android版とWeb版は使用ライブラリやバージョンが異なります。以下はWeb版の一覧であり、Android版の全依存を列挙したものではありません。</p></section>
+    <section class="policy-section"><h2>Android版</h2><p>設定→アプリ情報→オープンソースライセンスから、配布版で使用するライブラリとライセンス表示を確認できます。CameraX、OpenCV、AndroidX、Room等を利用しています。広告SDKの利用条件を、OSSライセンスと同一のものとして扱っていません。</p><p>Android版 v0.9.13 の配布資料として、OpenCV 4.13.0、Intel IPP、関連する第三者コードの著作権表示・ライセンス・通知・謝辞を原文で掲載しています。<a href="/THIRD-PARTY-NATIVE-NOTICES.txt">第三者ネイティブライブラリのライセンス通知（TXT）</a></p><p>Android版とWeb版は使用ライブラリやバージョンが異なります。以下はWeb版の一覧であり、Android版の全依存を列挙したものではありません。</p></section>
     <section id="advertising-sdk" class="policy-section">
       <h2>広告関連SDK・サービス（OSSとは別の区分）</h2>
-      <p>2026年10月21日に参照したAndroid版v0.9.8／Web版v0.8.9の構成です。SDKの導入は、本番広告の配信開始を意味しません。配布版の更新時に利用バージョンと条件を照合します。</p>
+      <p>Android版 v0.9.13（ビルド130000）の広告関連SDKを記載しています。配布版の更新時に利用バージョンと条件を照合します。</p>
       <h3>Android版に導入済み</h3>
       <ul><li><strong>Google Mobile Ads SDK（Next-Gen）1.5.0：</strong>Google AdMob向けの広告SDK。Gradle識別子は <code>com.google.android.libraries.ads.mobile.sdk:ads-mobile-sdk:1.5.0</code> です。</li><li><strong>Google User Messaging Platform（UMP）SDK 4.0.0：</strong>同意メッセージとプライバシー選択を扱うSDK。Gradle識別子は <code>com.google.android.ump:user-messaging-platform:4.0.0</code> です。</li></ul>
       <p>両SDKの配布メタデータでは利用条件として <a href="https://developer.android.com/studio/terms">Android Software Development Kit License</a> が案内されています。広告SDKには<a href="https://developers.google.com/admob/terms">AdMobに関する利用規約</a>も適用されます。これらをMITやApache等のOSSとして分類していません。公式ドキュメントやサンプルコードのライセンス表示と、SDK本体の利用条件も別です。SDKに含まれるOSSの必要な表示は、配布版のアプリ内ライセンス表示で確認してください。</p>
-      <p>現在の準備Releaseは本番ID未設定で実効OFF。開発・クローズドテスト用のテスト広告と、将来の本番広告を区別します。UMPの組込みと、本番ID・配信地域に合わせた同意メッセージの設定・検証完了も同じ意味ではありません。</p>
+      <p>Google Playの内部テストで配布しているRelease版には本番用のAdMob IDを設定しています。実際の配信状況と、UMPによる同意管理についてはプライバシーポリシーをご確認ください。</p>
       <h3>Web版・公式紹介サイト</h3>
       <p>Web版は外部広告ライブラリ未導入・広告OFFです。将来の広告掲載は予定していますが、サービスは未確定で、未採用のサービスを利用中のOSS一覧へ追加していません。導入前にライセンス・利用規約・プライバシー説明・必要なCookie等の同意管理を確認します。この紹介サイト自体にも広告SDK・タグはありません。</p>
       <p><a href="privacy.html#advertising">広告の現在の状況と今後の方針</a></p>
