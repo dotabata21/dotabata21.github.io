@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="血圧記録くんのOSSライセンスと利用SDK。Android版の広告・同意管理SDK、Web版のLICENSE・NOTICE、広告未導入の状況と今後の予定を区別してご案内します。">
+  <meta name="description" content="血圧記録くんのOSSライセンスと利用SDK。Android版の第三者ライセンス通知と広告・同意管理SDK、Web版のLICENSE・NOTICEをご案内します。">
   <meta name="theme-color" content="#edf5fc">
   <meta name="robots" content="index,follow">
   <title>OSSライセンス・利用SDK | 血圧記録くん</title>
@@ -12,7 +12,7 @@
   <meta property="og:locale" content="ja_JP">
   <meta property="og:site_name" content="血圧記録くん | dotabata21 Apps">
   <meta property="og:title" content="OSSライセンス・利用SDK | 血圧記録くん">
-  <meta property="og:description" content="血圧記録くんのOSSライセンスと利用SDK。Android版の広告・同意管理SDK、Web版のLICENSE・NOTICE、広告未導入の状況と今後の予定を区別してご案内します。">
+  <meta property="og:description" content="血圧記録くんのOSSライセンスと利用SDK。Android版の第三者ライセンス通知と広告・同意管理SDK、Web版のLICENSE・NOTICEをご案内します。">
   <meta property="og:url" content="https://dotabata21.github.io/licenses.html">
   <meta property="og:image" content="https://dotabata21.github.io/images/blood-pressure-kun-hero.png">
   <meta property="og:image:width" content="2048">
@@ -38,14 +38,14 @@
     <section class="policy-section"><h2>Android版</h2><p>設定→アプリ情報→オープンソースライセンスから、配布版で使用するライブラリとライセンス表示を確認できます。CameraX、OpenCV、AndroidX、Room等を利用しています。広告SDKの利用条件を、OSSライセンスと同一のものとして扱っていません。</p><p>Android版 v0.9.13 の配布資料として、OpenCV 4.13.0、Intel IPP、関連する第三者コードの著作権表示・ライセンス・通知・謝辞を原文で掲載しています。<a href="/THIRD-PARTY-NATIVE-NOTICES.txt">第三者ネイティブライブラリのライセンス通知（TXT）</a></p><p>Android版とWeb版は使用ライブラリやバージョンが異なります。以下はWeb版の一覧であり、Android版の全依存を列挙したものではありません。</p></section>
     <section id="advertising-sdk" class="policy-section">
       <h2>広告関連SDK・サービス（OSSとは別の区分）</h2>
-      <p>Android版 v0.9.13（ビルド130000）の広告関連SDKを記載しています。配布版の更新時に利用バージョンと条件を照合します。</p>
+      <p>Android版の広告配信と同意管理に使用するSDKをご案内します。</p>
       <h3>Android版に導入済み</h3>
       <ul><li><strong>Google Mobile Ads SDK（Next-Gen）1.5.0：</strong>Google AdMob向けの広告SDK。Gradle識別子は <code>com.google.android.libraries.ads.mobile.sdk:ads-mobile-sdk:1.5.0</code> です。</li><li><strong>Google User Messaging Platform（UMP）SDK 4.0.0：</strong>同意メッセージとプライバシー選択を扱うSDK。Gradle識別子は <code>com.google.android.ump:user-messaging-platform:4.0.0</code> です。</li></ul>
       <p>両SDKの配布メタデータでは利用条件として <a href="https://developer.android.com/studio/terms">Android Software Development Kit License</a> が案内されています。広告SDKには<a href="https://developers.google.com/admob/terms">AdMobに関する利用規約</a>も適用されます。これらをMITやApache等のOSSとして分類していません。公式ドキュメントやサンプルコードのライセンス表示と、SDK本体の利用条件も別です。SDKに含まれるOSSの必要な表示は、配布版のアプリ内ライセンス表示で確認してください。</p>
-      <p>Google Playの内部テストで配布しているRelease版には本番用のAdMob IDを設定しています。実際の配信状況と、UMPによる同意管理についてはプライバシーポリシーをご確認ください。</p>
+      <p>Android版の広告表示や同意については、プライバシーポリシーをご確認ください。</p>
       <h3>Web版・公式紹介サイト</h3>
-      <p>Web版は外部広告ライブラリ未導入・広告OFFです。将来の広告掲載は予定していますが、サービスは未確定で、未採用のサービスを利用中のOSS一覧へ追加していません。導入前にライセンス・利用規約・プライバシー説明・必要なCookie等の同意管理を確認します。この紹介サイト自体にも広告SDK・タグはありません。</p>
-      <p><a href="privacy.html#advertising">広告の現在の状況と今後の方針</a></p>
+      <p>Web版と公式紹介サイトでは、現在、広告SDKや広告タグを使用していません。Web版に広告を導入する場合は、利用するサービスの情報を更新します。</p>
+      <p><a href="privacy.html#advertising">広告・同意・アクセス解析の説明</a></p>
     </section>
     <section class="policy-section"><h2>Web版のライセンス表示</h2><p>2026年10月21日に参照したWeb版v0.8.9の、アプリ内ライセンス用データから掲載しています。実パッケージのLICENSE／NOTICEを基にした38の収録項目で、同じパッケージが複数箇所に含まれる場合があります。Web版の更新時に照合します。Android版の依存一覧とは別です。</p><p>ライブラリ名を押すと実際のライセンス／告知本文が開きます。Web版の「設定→アプリ情報→OSSライセンス」でも確認できます。明示的なライセンス名のない項目は本文の表示を優先しています。</p>
     <div class="license-list">
