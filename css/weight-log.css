@@ -37,6 +37,7 @@
 .weight-page .weight-privacy { padding-bottom: 34px; border-bottom: 1px solid var(--line); }
 .weight-page .weight-privacy h3 { margin-block: 28px 12px; font-size: 1.1rem; }
 .weight-page .site-footer { background: #f5f9f2; }
+.weight-page .policy-contents { background: var(--pale); }
 @media (max-width: 900px) {
   .weight-page .weight-hero { gap: 24px; padding: 26px; }
 }
