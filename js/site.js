@@ -1,9 +1,8 @@
 'use strict';
-// Owner-verified Web live release. Android remains unavailable until its Play listing is published.
-// Android URL must be copied from the published Play listing, never guessed.
+// Owner-verified Web and Google Play public releases.
 const releases = Object.freeze({
   web: { published: true, url: 'https://bpr-kun.web.app/' },
-  android: { published: false, url: null }
+  android: { published: true, url: 'https://play.google.com/store/apps/details?id=jp.dota21.bloodpressurekun' }
 });
 
 function publishedUrl(kind, release) {
@@ -26,6 +25,10 @@ for (const [kind, release] of Object.entries(releases)) {
     link.className = button.className;
     link.textContent = kind === 'web' ? '血圧記録くん Webを開く' : button.textContent;
     link.href = href;
+    if (kind === 'android') {
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+    }
     link.dataset.release = kind;
     button.replaceWith(link);
   }
